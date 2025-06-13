@@ -1,0 +1,39 @@
+# Ignore Visual Studio temporary files, build results, and user-specific files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Dd]ebug/
+[Rr]elease/
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+
+# Others
+*.dbmdl
+*.dbproj.schemaview
+*.pdb
+*.cache
+*.ide
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Rider
+.idea/

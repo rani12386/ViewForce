@@ -1,0 +1,31 @@
+﻿<Window x:Class="ViewForce.Reports.Shell.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:prism="http://www.codeplex.com/prism"
+        xmlns:regions="clr-namespace:ViewForce.UI.Common;assembly=ViewForce.UI.Common" Background="#180052"
+        Title="Shell"  Height="768" Width="1028" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <DockPanel LastChildFill="True">
+        <Border  BorderBrush="Green" Height="50"   DockPanel.Dock="Top">
+            <ContentControl HorizontalAlignment="Center" prism:RegionManager.RegionName="{x:Static regions:RegionNames.HeaderRegion}"></ContentControl>
+        </Border>
+        <Border  BorderBrush="Green"  Height="50" DockPanel.Dock="Top">
+            <ContentControl   prism:RegionManager.RegionName="{x:Static regions:RegionNames.MainMenuRegion}"></ContentControl>
+        </Border>
+        <Border  BorderBrush="Green" Width="Auto" DockPanel.Dock="Top">
+            <ContentControl   prism:RegionManager.RegionName="{x:Static regions:RegionNames.SearchRegion}"></ContentControl>
+        </Border>
+        <Border   BorderBrush="Green"  Height="50"   DockPanel.Dock="Bottom">
+            <ContentControl   prism:RegionManager.RegionName="{x:Static regions:RegionNames.FooterRegion}"></ContentControl>
+        </Border>
+        <Border  BorderBrush="Green"  Height="590" Width="200"   DockPanel.Dock="Left">
+            <ContentControl   prism:RegionManager.RegionName="{x:Static regions:RegionNames.LeftRegion}"></ContentControl>
+        </Border>
+        <Border  BorderBrush="Green"  Height="590" Width="200"  DockPanel.Dock="Right">
+            <ContentControl   prism:RegionManager.RegionName="{x:Static regions:RegionNames.RightRegion}"></ContentControl>
+        </Border>
+        
+        <Border BorderBrush="Green"   Height="590">
+            <ContentControl   prism:RegionManager.RegionName="{x:Static regions:RegionNames.MainRegion}"></ContentControl>
+        </Border>
+    </DockPanel>
+</Window>

@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="ViewForce.Reports.Shell.Views.HeaderView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+            >
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" Value="#0F5587"/>
+                    
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>    
+    <StackPanel Orientation="Horizontal">
+        <TextBlock Text="OutLook Consultancy Pvt Ltd." FontSize="30" Foreground="White"/>
+        <Image Source="C:\Users\outlook\Desktop\ViewForce\Presentation\ViewForce.Reports.Shell\Images\wish_logo.png"/>
+    </StackPanel>
+</UserControl>

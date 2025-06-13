@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{3A7DF5BD-670B-4E64-89ED-FCD1071B884D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UICommon", "UICommon", "{FCCBC9F8-52E3-410E-BD3A-0D398A1ADD7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataCommon", "DataCommon", "{8C5BB5EA-1101-4055-855C-5911493637EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewForce.Reports.Infrastructure", "Common\UICommon\ViewForce.Reports.Infrastructure\ViewForce.Reports.Infrastructure.csproj", "{A7752538-F03F-4793-A470-394AB7BB139F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewForce.Reports.DataAccess", "Common\DataCommon\ViewForce.Reports.DataAccess\ViewForce.Reports.DataAccess.csproj", "{8E593180-2FBF-4DC0-94DE-EDAC79FE0B87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5343162A-62F9-4BE0-93B3-B17AFBF9C83E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewForce.Reports.Data", "Data\ViewForce.Reports.Data\ViewForce.Reports.Data.csproj", "{50AD632F-31A7-416B-98FC-E61E5DAED6CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{0EB2325B-6039-4FA8-9A36-83197615BF7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewForce.Reports.Business", "Business\ViewForce.Reports.Business\ViewForce.Reports.Business.csproj", "{A8DB1049-497B-4759-A6B6-743FD7A2B06F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{7AA4AAA1-8B7B-436F-81BC-987CCE2498A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9CCDE24F-03E0-4279-BB39-D8445A4924E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewForce.Reports.Shell", "Presentation\ViewForce.Reports.Shell\ViewForce.Reports.Shell.csproj", "{B0353EC5-07BE-4FCB-BD81-700C09704380}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{834CCD00-21F0-4A56-A903-2722053FF70B}"
+	ProjectSection(SolutionItems) = preProject
+		..\ViewForcePro\Lib\Microsoft.Practices.Prism.dll = ..\ViewForcePro\Lib\Microsoft.Practices.Prism.dll
+		..\ViewForcePro\Lib\Microsoft.Practices.Prism.Interactivity.dll = ..\ViewForcePro\Lib\Microsoft.Practices.Prism.Interactivity.dll
+		..\ViewForcePro\Lib\Microsoft.Practices.Prism.MefExtensions.dll = ..\ViewForcePro\Lib\Microsoft.Practices.Prism.MefExtensions.dll
+		..\ViewForcePro\Lib\Microsoft.Practices.Prism.UnityExtensions.dll = ..\ViewForcePro\Lib\Microsoft.Practices.Prism.UnityExtensions.dll
+		..\ViewForcePro\Lib\Microsoft.Practices.ServiceLocation.dll = ..\ViewForcePro\Lib\Microsoft.Practices.ServiceLocation.dll
+		..\ViewForcePro\Lib\Microsoft.Practices.Unity.dll = ..\ViewForcePro\Lib\Microsoft.Practices.Unity.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewForce.Reports", "Presentation\Modules\ViewForce.Reports\ViewForce.Reports.csproj", "{A7EA1960-EC3F-47B6-AD1F-DE5F7DB83C53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewForce.UI.Common", "Common\UICommon\ViewForce.UI.Common\ViewForce.UI.Common.csproj", "{9D0CA240-D41C-499A-B227-E2DCCBBCEB83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7752538-F03F-4793-A470-394AB7BB139F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7752538-F03F-4793-A470-394AB7BB139F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7752538-F03F-4793-A470-394AB7BB139F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7752538-F03F-4793-A470-394AB7BB139F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E593180-2FBF-4DC0-94DE-EDAC79FE0B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E593180-2FBF-4DC0-94DE-EDAC79FE0B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E593180-2FBF-4DC0-94DE-EDAC79FE0B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E593180-2FBF-4DC0-94DE-EDAC79FE0B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50AD632F-31A7-416B-98FC-E61E5DAED6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50AD632F-31A7-416B-98FC-E61E5DAED6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50AD632F-31A7-416B-98FC-E61E5DAED6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50AD632F-31A7-416B-98FC-E61E5DAED6CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DB1049-497B-4759-A6B6-743FD7A2B06F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DB1049-497B-4759-A6B6-743FD7A2B06F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DB1049-497B-4759-A6B6-743FD7A2B06F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DB1049-497B-4759-A6B6-743FD7A2B06F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0353EC5-07BE-4FCB-BD81-700C09704380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0353EC5-07BE-4FCB-BD81-700C09704380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0353EC5-07BE-4FCB-BD81-700C09704380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0353EC5-07BE-4FCB-BD81-700C09704380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7EA1960-EC3F-47B6-AD1F-DE5F7DB83C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EA1960-EC3F-47B6-AD1F-DE5F7DB83C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7EA1960-EC3F-47B6-AD1F-DE5F7DB83C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7EA1960-EC3F-47B6-AD1F-DE5F7DB83C53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D0CA240-D41C-499A-B227-E2DCCBBCEB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D0CA240-D41C-499A-B227-E2DCCBBCEB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D0CA240-D41C-499A-B227-E2DCCBBCEB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D0CA240-D41C-499A-B227-E2DCCBBCEB83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCCBC9F8-52E3-410E-BD3A-0D398A1ADD7A} = {3A7DF5BD-670B-4E64-89ED-FCD1071B884D}
+		{8C5BB5EA-1101-4055-855C-5911493637EC} = {3A7DF5BD-670B-4E64-89ED-FCD1071B884D}
+		{A7752538-F03F-4793-A470-394AB7BB139F} = {FCCBC9F8-52E3-410E-BD3A-0D398A1ADD7A}
+		{9D0CA240-D41C-499A-B227-E2DCCBBCEB83} = {FCCBC9F8-52E3-410E-BD3A-0D398A1ADD7A}
+		{8E593180-2FBF-4DC0-94DE-EDAC79FE0B87} = {8C5BB5EA-1101-4055-855C-5911493637EC}
+		{50AD632F-31A7-416B-98FC-E61E5DAED6CA} = {5343162A-62F9-4BE0-93B3-B17AFBF9C83E}
+		{A8DB1049-497B-4759-A6B6-743FD7A2B06F} = {0EB2325B-6039-4FA8-9A36-83197615BF7E}
+		{9CCDE24F-03E0-4279-BB39-D8445A4924E6} = {7AA4AAA1-8B7B-436F-81BC-987CCE2498A9}
+		{B0353EC5-07BE-4FCB-BD81-700C09704380} = {7AA4AAA1-8B7B-436F-81BC-987CCE2498A9}
+		{A7EA1960-EC3F-47B6-AD1F-DE5F7DB83C53} = {9CCDE24F-03E0-4279-BB39-D8445A4924E6}
+	EndGlobalSection
+EndGlobal
