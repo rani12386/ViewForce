@@ -13,22 +13,5 @@ variables:
   buildConfiguration: 'Release'  
 
 steps:
-- task: NuGetCommand@2
-  inputs:
-    restoreSolution: '**/*.sln'
-
-- task: VSBuild@1
-  inputs:
-    solution: '**/*.sln'
-    msbuildArgs: '/p:Configuration=$(buildConfiguration)'
-    configuration: '$(buildConfiguration)'
-
-- task: CopyFiles@2
-  inputs:
-    contents: '**\bin\$(buildConfiguration)\**'
-    targetFolder: '$(Build.ArtifactStagingDirectory)'
-
-- task: PublishBuildArtifacts@1
-  inputs:
-    pathToPublish: '$(Build.ArtifactStagingDirectory)'
-    artifactName: 'drop'
+- script: '"C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe" ViewForce.sln /p:Configuration=Release'
+  displayName: 'Build .NET Framework 4.5 project using MSBuild'
