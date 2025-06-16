@@ -13,6 +13,24 @@ variables:
   buildConfiguration: 'Release'  
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration) 
-  displayName: 'dotnet build $(buildConfiguration)'
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '**/*.sln'
+
+- task: VSBuild@1
+  inputs:
+    solution: '**/*.sln'
+    msbuildArgs: '/p:Configuration=$(buildConfiguration)'
+    configuration: '$(buildConfiguration)'
+
+- task: CopyFiles@2
+  inputs:
+    contents: '**\bin\$(buildConfiguration)\**'
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: 'drop'
 
