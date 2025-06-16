@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  name: Default
   
 variables:
   buildConfiguration: 'Release'  
@@ -15,3 +15,4 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration) 
   displayName: 'dotnet build $(buildConfiguration)'
+
