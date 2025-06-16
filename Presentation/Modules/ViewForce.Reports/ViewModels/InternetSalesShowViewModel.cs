@@ -75,7 +75,7 @@
         #region Private Methods
 
         /// <summary>
-        /// Retrive InternetSales records
+        /// Retrive Internet Sales records
         /// </summary>
         /// <param name="seleceteList"></param>
         private void RetriveInternetSales(IDictionary<string, string> seleceteList)
